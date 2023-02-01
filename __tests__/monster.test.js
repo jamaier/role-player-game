@@ -11,6 +11,8 @@ describe('Monster', () => {
   
   test('Monster should use attack', () => {
     const monster = new Monster("Mind Flayer", 15, "30 ft.");
-    expect(monster.attack()).toEqual("Extract Brain");
+    expect(monster.attack()).toContain("Tentacles");
+    expect(monster.attack()).toContain("Extract-Brain");
+    expect(monster.attack()).toContain("Mind-Blast");
   });
 });
