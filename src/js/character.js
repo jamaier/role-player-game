@@ -16,9 +16,9 @@ export default class Character {
   }
   
   bestAttack() {
-    // const spell = castSpell();
-    // const cry = battleCry();
-    // let attack = cry + spell;
-    // return attack.join(" ");
+    const spell = this.castSpell();
+    const cry = this.battleCry();
+    let attack = cry + " " + spell;
+    return attack;
   }
 }
