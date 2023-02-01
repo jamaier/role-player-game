@@ -9,4 +9,9 @@ export default class Character {
     const yell = "CHAOS AND ANARCHY!!!";
     return yell;
   }
+
+  castSpell() {
+    const cast
+  }
+  
 }

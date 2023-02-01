@@ -23,5 +23,10 @@ describe('Character', () => {
     const mainCharacter = new Character("Old Norse", 200, "mage");
     expect(mainCharacter.battleCry()).toEqual("CHAOS AND ANARCHY!!!");
   });
+
+  test('character will cast Fireball', () => {
+    const mainCharacter = new Character("Old Norse", 200, "mage");
+    expect(mainCharacter.castSpell()).toEqual("Fireball");
+  });
   
 });
