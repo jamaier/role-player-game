@@ -2,20 +2,26 @@ import Character from '../src/js/character';
 
 describe('Character', () => {
   test('should return the name of the character', () => {
-    const characterName = new Character("Old Norse"); // make sure to give a parameter
-    expect(characterName.name).toEqual("Old Norse"); // match the parameter above
+    const mainCharacter = new Character("Old Norse"); // make sure to give a parameter
+    expect(mainCharacter.name).toEqual("Old Norse"); // match the parameter above
   });
 
   test('should return the age of the character', () => {
-    const characterName = new Character("Old Norse", 200); // make sure to give a parameter
-    expect(characterName.name).toEqual("Old Norse"); // match the parameter above
-    expect(characterName.age).toEqual(200);
+    const mainCharacter = new Character("Old Norse", 200); // make sure to give a parameter
+    expect(mainCharacter.name).toEqual("Old Norse"); // match the parameter above
+    expect(mainCharacter.age).toEqual(200);
   });
 
   test('should return the class of the character', () => {
-    const characterName = new Character("Old Norse", 200, "mage"); // make sure to give a parameter
-    expect(characterName.name).toEqual("Old Norse"); // match the parameter above
-    expect(characterName.age).toEqual(200);
-    expect(characterName.characterClass).toEqual("mage");
+    const mainCharacter = new Character("Old Norse", 200, "mage"); // make sure to give a parameter
+    expect(mainCharacter.name).toEqual("Old Norse"); // match the parameter above
+    expect(mainCharacter.age).toEqual(200); // add parameters to object constructor
+    expect(mainCharacter.characterClass).toEqual("mage");
   });
+
+  test('character will shout a catchphrase', () => {
+    const mainCharacter = new Character("Old Norse", 200, "mage");
+    expect(mainCharacter.battleCry()).toEqual("CHAOS AND ANARCHY!!!");
+  });
+  
 });

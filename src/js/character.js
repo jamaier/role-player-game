@@ -4,4 +4,8 @@ export default class Character {
     this.age = age;
     this.characterClass = characterClass;
   }
+
+  battleCry() {
+
+  }
 }
