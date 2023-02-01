@@ -16,6 +16,6 @@ describe('Character', () => {
     const characterName = new Character("Old Norse", 200, "mage"); // make sure to give a parameter
     expect(characterName.name).toEqual("Old Norse"); // match the parameter above
     expect(characterName.age).toEqual(200);
-    expect(characterName.class).toEqual("mage");
+    expect(characterName.characterClass).toEqual("mage");
   });
 });
