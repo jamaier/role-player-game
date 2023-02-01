@@ -29,4 +29,9 @@ describe('Character', () => {
     expect(mainCharacter.castSpell()).toEqual("Fireball");
   });
   
+  test('character will attack while yelling CHAOS AND ANARCHY!!! and casting a fireball', () => {
+    const mainCharacter = new Character("Old Norse", 200, "mage");
+    expect(mainCharacter.bestAttack()).toEqual("CHAOS AND ANARCHY!!! Fireball");
+  });
+
 });

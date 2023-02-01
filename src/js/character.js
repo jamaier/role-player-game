@@ -15,4 +15,10 @@ export default class Character {
     return cast;
   }
   
+  bestAttack() {
+    // const spell = castSpell();
+    // const cry = battleCry();
+    // let attack = cry + spell;
+    // return attack.join(" ");
+  }
 }
