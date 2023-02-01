@@ -5,4 +5,8 @@ export default class Monster {
     this.armorClass = armorClass;
     this.speed = speed;
   }
+
+  attack() {
+    
+  }
 }
