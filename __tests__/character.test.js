@@ -34,4 +34,15 @@ describe('Character', () => {
     expect(mainCharacter.bestAttack()).toEqual("CHAOS AND ANARCHY!!! Fireball");
   });
 
+  test('character will earn points when they attack', () => {
+    const mainCharacter = new Character("Old Norse", 200, "mage");
+    mainCharacter.bestAttack();
+    expect(mainCharacter.earnXp).toEqual(10);
+  });
+
+  // test('character will be able to level up', () => {
+  //   const mainCharacter = new Character("Old Norse", 200, "mage", 1);
+  //   expect(mainCharacter.levelUp()).toEqual();
+  // })
+
 });

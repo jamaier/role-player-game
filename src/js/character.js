@@ -1,8 +1,10 @@
 export default class Character {
-  constructor(name, age, characterClass) {
+  constructor(name, age, characterClass, characterLevel) {
     this.name = name;
     this.age = age;
     this.characterClass = characterClass;
+    this.characterLevel = characterLevel;
+    this.characterXp = 0;
   }
 
   battleCry() {
@@ -21,4 +23,11 @@ export default class Character {
     let attack = cry + " " + spell;
     return attack;
   }
+
+
+  
+  // levelUp() {
+
+  // }
+
 }
