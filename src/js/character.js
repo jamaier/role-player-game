@@ -11,7 +11,8 @@ export default class Character {
   }
 
   castSpell() {
-    const cast
+    const cast = "Fireball";
+    return cast;
   }
   
 }
