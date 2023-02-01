@@ -1,3 +1,5 @@
-export default function Character(name) {
-  this.name = name;
+export default class Character {
+  constructor(name) {
+    this.name = name;
+  }
 }
