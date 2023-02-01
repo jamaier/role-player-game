@@ -1,6 +1,7 @@
 export default class Character {
-  constructor(name, age) {
+  constructor(name, age, mage) {
     this.name = name;
     this.age = age;
+    
   }
 }
