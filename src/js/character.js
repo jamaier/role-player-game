@@ -6,6 +6,7 @@ export default class Character {
   }
 
   battleCry() {
-
+    const yell = "CHAOS AND ANARCHY!!!";
+    return yell;
   }
 }
