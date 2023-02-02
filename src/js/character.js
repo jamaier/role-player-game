@@ -1,10 +1,9 @@
 export default class Character {
-  constructor(name, age, characterClass, characterLevel) {
+  constructor(name, age, characterClass, weapon) {
     this.name = name;
     this.age = age;
     this.characterClass = characterClass;
-    this.characterLevel = characterLevel;
-    this.characterXp = 0;
+    this.weapon = weapon;
   }
 
   battleCry() {
