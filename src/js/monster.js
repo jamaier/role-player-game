@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 export default class Monster {
-  
   constructor(name, armorClass, speed, monsterhealth) {
     this.name = name;
     this.armorClass = armorClass;
@@ -22,15 +21,14 @@ export default class Monster {
       if (array[i] === "Mind-Blast") {
         attackArray.push("Mind-Blast");
       }
-    } return attackArray;
+    }
+    return attackArray;
   }
 
-  
   setHealth() {
     this.monsterhealth += 15;
-    return this.monsterhealth; 
+    return this.monsterhealth;
   }
-
 }
 
 // attack() {

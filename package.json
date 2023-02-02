@@ -1,12 +1,12 @@
 {
   "name": "rpg",
   "version": "1.0.0",
-  "description": "",
+  "description": "* JavaScript\r * TDD\r * ESLint\r * VSCode\r * Babel",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode=development",
     "start": "npm run build && webpack-dev-server --open --mode=development",
-    "lint": "eslint src/*.js",
+    "lint": "eslint src/**/*.js",
     "test": "jest --coverage"
   },
   "keywords": [],
@@ -28,5 +28,13 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamaier/role-player-game.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jamaier/role-player-game/issues"
+  },
+  "homepage": "https://github.com/jamaier/role-player-game#readme"
 }

@@ -17,7 +17,7 @@ export default class Character {
     const cast = "Fireball";
     return cast;
   }
-  
+
   bestAttack() {
     const spell = this.castSpell();
     const cry = this.battleCry();
@@ -27,16 +27,15 @@ export default class Character {
 
   setHealth() {
     // if (name === "Old Norse") {
-      this.health += 10;
+    this.health += 10;
     // } // this prototype doesn't need to specify the name because that's defined in our test.
-    return this.health; 
+    return this.health;
   }
 
   levelUp() {
     if (this.health >= 10) {
-      this.level++
+      this.level++;
     }
     return this.level;
   }
-
 }

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import Character from '../src/js/character';
 
 describe('Character', () => {
@@ -39,7 +40,6 @@ describe('Character', () => {
   test('character will increase a level when their health increases', () => {
     const mainCharacter = new Character("Old Norse", 200, "mage", "Hammer", 10, 1);
     expect(mainCharacter.levelUp()).toBe(2);
-    
   });
 
 
