@@ -2,13 +2,13 @@ import Character from '../src/js/character';
 
 describe('Character', () => {
   test('create a character with attributes such as name, age, character class, weapon of choice', () => {
-    const mainCharacter = new Character("Old Norse", 200, "mage", "Hammer", 0);
+    const mainCharacter = new Character("Old Norse", 200, "mage", "Hammer", 0, 0);
     expect(mainCharacter.name).toEqual("Old Norse");
     expect(mainCharacter.age).toEqual(200);
     expect(mainCharacter.characterClass).toEqual("mage");
     expect(mainCharacter.weapon).toEqual("Hammer");
-    // expect(mainCharacter.level).toEqual(0);
     expect(mainCharacter.health).toEqual(0);
+    expect(mainCharacter.level).toEqual(0);
   });
 
   test('character will shout a catchphrase', () => {
@@ -33,7 +33,12 @@ describe('Character', () => {
 
   test('character will gain health by (something)', () => {
     const mainCharacter = new Character("Old Norse", 200, "mage", "Hammer", 10);
-    expect(mainCharacter.setHealth("Old Norse")).toEqual(20);
+    expect(mainCharacter.setHealth()).toEqual(20);
+  });
+
+  test('character will increase a level when their age increases', () => {
+    const mainCharacter = new Character("Old Norse", 200, "mage", "Hammer", 10);
+    expect(mainCharacter.levelUp()).toEqual(9);
   });
 
 

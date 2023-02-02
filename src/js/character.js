@@ -1,10 +1,11 @@
 export default class Character {
-  constructor(name, age, characterClass, weapon, health) {
+  constructor(name, age, characterClass, weapon, health, level) {
     this.name = name;
     this.age = age;
     this.characterClass = characterClass;
     this.weapon = weapon;
     this.health = health;
+    this.level = level;
   }
 
   battleCry() {
@@ -30,5 +31,12 @@ export default class Character {
     // } // this prototype doesn't need to specify the name because that's defined in our test.
     return this.health; 
   }
+
+  levelUp() {
+    let thisLevel = 
+    
+  }
+
+
 
 }
