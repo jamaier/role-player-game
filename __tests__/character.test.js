@@ -7,6 +7,8 @@ describe('Character', () => {
     expect(mainCharacter.age).toEqual(200);
     expect(mainCharacter.characterClass).toEqual("mage");
     expect(mainCharacter.weapon).toEqual("Hammer");
+    expect(mainCharacter.level).toEqual(0);
+    expect(mainCharacter.health).toEqual(0);
   });
 
   test('character will shout a catchphrase', () => {
