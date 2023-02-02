@@ -1,11 +1,10 @@
 export default class Character {
-  constructor(name, age, characterClass, weapon) {
+  constructor(name, age, characterClass, weapon, health) {
     this.name = name;
     this.age = age;
     this.characterClass = characterClass;
     this.weapon = weapon;
-    this.level = 0;
-    this.health = 0;
+    this.health = health;
   }
 
   battleCry() {
@@ -25,12 +24,11 @@ export default class Character {
     return attack;
   }
 
-  SetHealth(){
-    
+  setHealth() {
+    // if (name === "Old Norse") {
+      this.health += 10;
+    // } // this prototype doesn't need to specify the name because that's defined in our test.
+    return this.health; 
   }
-  
-  // levelUp() {
-
-  // }
 
 }
