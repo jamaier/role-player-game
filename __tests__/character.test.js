@@ -26,7 +26,10 @@ describe('Character', () => {
     expect(mainCharacter.bestAttack()).toEqual("CHAOS AND ANARCHY!!! Fireball");
   });
 
-  
+  test('character will gain health by (something)', () => {
+    const mainCharacter = new Character("Old Norse", 200, "mage", "Hammer");
+    expect(mainCharacter.SetHealth()).toEqual(10);
+  });
 
 
 });

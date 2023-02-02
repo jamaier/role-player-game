@@ -25,7 +25,9 @@ export default class Character {
     return attack;
   }
 
-
+  SetHealth(){
+    
+  }
   
   // levelUp() {
 
