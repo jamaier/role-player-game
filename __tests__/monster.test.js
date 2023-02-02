@@ -14,10 +14,12 @@ describe('Monster', () => {
     expect(monster.selectAttack()).toContain("Tentacles"); // use toContain instead of toEqual
     expect(monster.selectAttack()).toContain("Extract-Brain");
     expect(monster.selectAttack()).toContain("Mind-Blast");
+
   });
 
-  // test('Monster should use Extract-brain', () => {
-  //   const monster = new Monster("Mind Flayer", 15, "30 ft.");
-  //   expect(monster.selectAttack()).toContain("Extract-Brain");
-  // });
+  test('Monster should gain health somehow', () => {
+    const monster = new Monster ("Mind Flayer", 15, "30 ft.", 15);
+    expect(monster.setHealth()).toEqual(25);
+  });
+
 });

@@ -34,11 +34,9 @@ export default class Character {
 
   levelUp() {
     if (this.health >= 10) {
-      this.level++;
+      this.level++
     }
     return this.level;
   }
-
-// every 10 health points, your level goes up 1
 
 }

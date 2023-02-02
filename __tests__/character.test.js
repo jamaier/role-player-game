@@ -32,8 +32,8 @@ describe('Character', () => {
   });
 
   test('character will gain health by (something)', () => {
-    const mainCharacter = new Character("Old Norse", 200, "mage", "Hammer", 10);
-    expect(mainCharacter.setHealth()).toEqual(20);
+     const mainCharacter = new Character("Old Norse", 200, "mage", "Hammer", 10);
+     expect(mainCharacter.setHealth()).toEqual(20);
   });
 
   test('character will increase a level when their health increases', () => {

@@ -1,10 +1,11 @@
 /* eslint-disable no-unused-vars */
 export default class Monster {
   
-  constructor(name, armorClass, speed) {
+  constructor(name, armorClass, speed, monsterhealth) {
     this.name = name;
     this.armorClass = armorClass;
     this.speed = speed;
+    this.monsterhealth = monsterhealth;
   }
 
   selectAttack() {
@@ -25,7 +26,12 @@ export default class Monster {
   }
 
   
-
+  setHealth() {
+    // if (name === "Old Norse") {
+      // this.monsterhealth += 15;
+    // } // this prototype doesn't need to specify the name because that's defined in our test.
+    // return this.monsterhealth; 
+  }
 
 }
 
