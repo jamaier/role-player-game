@@ -19,7 +19,7 @@ describe('Monster', () => {
 
   test('Monster should gain health somehow', () => {
     const monster = new Monster ("Mind Flayer", 15, "30 ft.", 15);
-    expect(monster.setHealth()).toEqual(25);
+    expect(monster.setHealth()).toEqual(30);
   });
 
 });

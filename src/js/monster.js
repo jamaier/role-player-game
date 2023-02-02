@@ -27,10 +27,8 @@ export default class Monster {
 
   
   setHealth() {
-    // if (name === "Old Norse") {
-      // this.monsterhealth += 15;
-    // } // this prototype doesn't need to specify the name because that's defined in our test.
-    // return this.monsterhealth; 
+    this.monsterhealth += 15;
+    return this.monsterhealth; 
   }
 
 }
